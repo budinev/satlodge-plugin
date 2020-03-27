@@ -1,0 +1,2 @@
+# satlodge-plugin
+plugin-sl

@@ -2922,7 +2922,7 @@ class IPKinst(Screen):
             dest = ipkpth + '/' + self.sel
             if self.sel.find('.ipk') != -1:
                 self.sel = self.sel[0]
-                cmd0 = 'opkg install --force-overwrite ' + dest
+                cmd0 = 'opkg install --force-overwrite --force-depends' + dest
                 self.session.open(slConsole, title='IPK Local Installation', cmdlist=[cmd0, 'sleep 5'], finishedCallback=self.msgipkinst)              
 
             if self.sel.find('.tar.gz') != -1:
